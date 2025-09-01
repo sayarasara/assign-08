@@ -4,6 +4,13 @@ const Footerr = () => {
   return (
     <div>
     <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+         <div className="w-10 rounded-full">
+          <img  
+            alt=""
+            src="/public/logo.png
+            "/>
+            </div>
+    <a className="btn btn-ghost text-xl">Phudu</a>
   <nav className="grid grid-flow-col gap-4">
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
@@ -11,7 +18,7 @@ const Footerr = () => {
     <a className="link link-hover">Press kit</a>
   </nav>
   <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by Phudu Industries Ltd</p>
   </aside>
    <nav>
     <div className="grid grid-flow-col gap-4">

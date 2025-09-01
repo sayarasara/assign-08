@@ -6,16 +6,41 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Root from './Root';
 import App from './App';
+import CardDetail from './Api/CardDetail';
+import Errorpage from './Errorpage';
+import MyBookings from './MyBookings';
+import Blogs from './Blogs';
+import { Connect } from 'vite';
+import Contact from './Navbar/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
    Component: Root,
+    errorElement:<Errorpage></Errorpage>,
    children: [
     {
       index: true,
       Component: App
-    }
+    },
+    {
+      path: "doctors/:id",
+      Component: CardDetail
+
+    },
+    {
+      path:"MyBookings",
+      Component: MyBookings
+    },
+    {
+      path:"Blogs",
+      Component:Blogs
+    },
+    {
+      path:"Contact",
+      Component:Contact
+    },
+ 
    ]
   },
 ]);

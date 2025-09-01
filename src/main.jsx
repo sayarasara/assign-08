@@ -10,7 +10,6 @@ import CardDetail from './Api/CardDetail';
 import Errorpage from './Errorpage';
 import MyBookings from './MyBookings';
 import Blogs from './Blogs';
-import { Connect } from 'vite';
 import Contact from './Navbar/Contact';
 
 const router = createBrowserRouter([

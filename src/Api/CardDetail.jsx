@@ -2,11 +2,14 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { doctorsData } from "./Jsondata";
-
+  import { ToastContainer, toast } from 'react-toastify';
 export default function CardDetail() {
   const { id } = useParams();
   const doctor = doctorsData.find(doc => doc.id === parseInt(id));
-  
+   
+ const notify = () => toast("Booked Successfully!");
+
+
   if (!doctor) {
     return <div>Doctor not found</div>;
   }
@@ -22,7 +25,7 @@ export default function CardDetail() {
       <div style={styles.detailHeader}>
         <div style={styles.doctorImage}>
           <div style={styles.imagePlaceholder}>
-           
+            <img src="/public/doctor-sample.png" alt="Doctor Image" style={styles.image} />
           </div>
         </div>
         <div style={styles.doctorMainInfo}>
@@ -70,8 +73,8 @@ export default function CardDetail() {
           <p style={styles.feeAmount}>{doctor.fee}</p>
         </div>
 
-        <button style={styles.bookAppointmentBtn}>
-          Book an Appointment
+        <button  onClick={ notify } style={styles.bookAppointmentBtn}>
+          Book an Appointment  <ToastContainer />
         </button>
       </div>
       

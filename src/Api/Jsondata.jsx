@@ -64,5 +64,71 @@
     availability: ["Monday", "Thursday", "Saturday"],
     fee: "Tk 280 (incl. Vat) Per consultation",
     description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 7,
+    name: "Dr. Lisa Anderson",
+    qualification: "MBBS, DLO - ENT",
+    specialty: "Ear, Nose and Throat",
+    registrationNumber: "BD 17890123",
+    hospital: "ENT Specialist Hospital, Sylhet",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 280 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 8,
+    name: "Dr. Nisa Anderson",
+    qualification: "MBBS, DLO - ENT",
+    specialty: " Throat",
+    registrationNumber: "BD 17890123",
+    hospital: "ENT Specialist Hospital, Sylhet",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 280 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 9,
+    name: "Dr. Zisa Anderson",
+    qualification: "MBBS, DLO - ENT",
+    specialty: "Ear, Nose and Throat",
+    registrationNumber: "BD 17890123",
+    hospital: "ENT Specialist Hospital, Sylhet",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 280 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 10,
+    name: "Dr. Strange",
+    qualification: "MBBS, DLO - ENT",
+    specialty: "Mind",
+    registrationNumber: "BD 17890123",
+    hospital: " xyz,USA",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 1180 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 11,
+    name: "Dr. Zara Anderson",
+    qualification: "MBBS, DLO - ENT",
+    specialty: "Ear, Nose and Throat",
+    registrationNumber: "BD 17890123",
+    hospital: "ENT Specialist Hospital, Sylhet",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 280 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
+  },
+  {
+    id: 12,
+    name: "Dr. Deak",
+    qualification: "MBBS, DLO - ENT",
+    specialty: "Ear, Nose and Mind",
+    registrationNumber: "BD 17890123",
+    hospital: "ENT Specialist Hospital, UK",
+    availability: ["Monday", "Thursday", "Saturday"],
+    fee: "Tk 280 (incl. Vat) Per consultation",
+    description: "Specializes in ENT disorders with a focus on hearing restoration and endoscopic sinus surgeries."
   }
 ];

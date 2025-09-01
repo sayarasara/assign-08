@@ -18,9 +18,9 @@ export default function Card() {
       <div style={styles.cardsContainer}>
         {doctorsData.map(doctor => (
           <div key={doctor.id} style={styles.card}>
-            <div style={styles.imagePlaceholder}>
-              <i className="fas fa-user-md" style={styles.icon}></i>
-            </div>
+          <div style={styles.imagePlaceholder}>
+  <img src="/public/doctor-sample.png" alt="Doctor Image" style={styles.image} />
+</div>
             <div style={styles.cardContent}>
               <h3 style={styles.doctorName}>{doctor.name}</h3>
               <p style={styles.qualification}>{doctor.qualification}</p>

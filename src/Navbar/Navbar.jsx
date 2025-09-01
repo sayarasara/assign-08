@@ -1,9 +1,26 @@
-import React from 'react'
+import { Link, Links } from "react-router";
 
-const Navbar = () => {
+
+
+
+function Navbar() {
+
+
+
+
+  const links = (
+  <>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/MyBookings">My Bookings</Link></li>
+    <li><Link to="/Blogs">Blogs</Link></li>
+    <li><Link to="/Contact">Contact Us</Link></li>
+  </>
+);
+
+
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <>
+<div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -12,18 +29,7 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>
-        <Link to="/" >Home</Link>
-          </a></li>
-        <li><a>
-        <Link to="/MyBookings" >My-Bookings</Link>
-          </a></li>
-        <li><a>
-        <Link to="/Blogs">Blogs</Link>
-          </a></li>
-        <li><a>
-        <Link to="/Contact" >Contact Us</Link>
-        </a></li>
+      {links}
       </ul>
     </div>
         <div className="w-10 rounded-full">
@@ -34,21 +40,17 @@ const Navbar = () => {
             </div>
     <a className="btn btn-ghost text-xl">Phudu</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex menu-horizontal">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>My-Bookings</a></li>
-      <li><a>Blogs</a></li>
-      <li><a>Contact Us</a></li>
-   
+   {links}
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn">Emergency</a>
   </div>
 </div>
-    </div>
+    </>
   )
 }
 
-export default Navbar
+export default Navbar;
